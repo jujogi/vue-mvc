@@ -4,24 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/*.html --no-cache",
-    "lint": "yarn lint:js",
-    "lint:js": "eslint --ext \".js,.vue\""
+    "dev": "parcel ./src/*.html --no-cache"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@parcel/transformer-vue": "2.7.0",
-    "@vue/eslint-config-airbnb": "^6.0.0",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "eslint": "^8.21.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "parcel": "^2.7.0"
   }
 }
