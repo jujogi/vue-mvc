@@ -6,13 +6,9 @@ export const add = (array, obj) => {
 }
 
 export const edit = (array, obj) => {
-    const objIndex = array.findIndex(objArray => objArray.id === obj.id);
-    const updatedObj = array[objIndex];
-    updatedObj.completed = !updatedObj.completed;
-
-    return [
-        ...array,
-    ]
+    return array.map(objArray => {
+        return objArray === obj.id ? obj : objArray;
+    });
 }
 
 export const remove = (array, objId) => {

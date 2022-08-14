@@ -2,14 +2,15 @@ import TODOS from "../utils/todos";
 import { generatePromise, uuid } from "../utils";
 import { add, edit, remove } from "../utils/crud";
 
-let mockTodos = [...TODOS];
+let mockTodos = [
+    ...TODOS
+];
 
 export const createTodo = (todo) => {
     const newTodo = {
         id: uuid(),
         ...todo,
     };
-
     mockTodos = add(mockTodos, newTodo);
 
     return getAllTodos();
@@ -21,7 +22,6 @@ export const editTodo = (todo) => {
 };
 
 export const getAllTodos = () => {
-    debugger;
     return generatePromise(mockTodos);
 }
 

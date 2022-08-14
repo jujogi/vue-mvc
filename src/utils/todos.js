@@ -6,7 +6,7 @@ export default [
     },
     {
         id: 2,
-        name: "🦮 Sacar el perro al parque",
+        name: "🦮 Sacar el perro",
         completed: true,
     },
     {
@@ -23,5 +23,10 @@ export default [
         id: 5,
         name: "⚽️ Hacer ejercicio",
         completed: false,
+    },
+    {
+        id: 6,
+        name: "📙 Preparar BrownBag",
+        completed: true,
     }
 ];

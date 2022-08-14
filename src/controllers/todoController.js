@@ -11,7 +11,6 @@ export class TodoController {
 
     async get() {
         try {
-            debugger;
             this.view.todos = await getAllTodos();
         } catch(e) {
             throw e;
@@ -20,7 +19,6 @@ export class TodoController {
 
     async add(todo) {
         try {
-            debugger;
             this.view.todos = await createTodo(todo);
         } catch(e) {
             throw e;
@@ -29,7 +27,7 @@ export class TodoController {
 
      async update(todo) {
         try {
-            debugger;
+            todo.completed = !todo.completed;
             this.view.todos = await editTodo(todo);
         } catch(e) {
             throw e;
@@ -38,7 +36,6 @@ export class TodoController {
     
      async delete(todoId) {
         try {
-            debugger;
             this.view.todos = await removeTodo(todoId);
         } catch(e) {
             throw e;
